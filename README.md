@@ -5,7 +5,7 @@ Convert CSS rules to JavaScript style objects
 This repo is a fork from the archived [`css-to-object`](https://github.com/jxnblk/css-to-object) with minor updates and improvements.
 
 ```js
-import toObj from 'css-to-obj'
+import toObj from '@moatorres/cssobject'
 
 const options = {
   kebabCase: true,
