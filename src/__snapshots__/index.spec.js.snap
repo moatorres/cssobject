@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toObj Should correctly parse pseudo-classes 1`] = `
+Object {
+  ".button": Object {
+    "color": "tomato",
+  },
+  ".button:hover": Object {
+    "color": "green",
+  },
+}
+`;
+
+exports[`toObj Should match the snapshot 1`] = `
+Object {
+  ".button": Object {
+    "color": "tomato",
+  },
+  ".button:hover": Object {
+    "color": "black",
+    "fontSize": "1rem",
+  },
+}
+`;
