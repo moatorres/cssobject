@@ -1,0 +1,38 @@
+{
+  "name": "cssobject",
+  "version": "1.0.0",
+  "decription": "css to javascript-object converter",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:update": "jest --updateSnapshot",
+    "test:dev": "jest --watchAll --no-cache -u",
+    "build": "yarn clean && babel src -d dist --ignore \"**/*.spec.js\" && copyfiles -u 1 \"src/*.d.ts\" dist",
+    "release": "yarn build && cp README.md package.json dist/ && cd dist && yarn publish --access restricted --non-interactive",
+    "fixit": "npm i --package-lock-only && npm audit fix && rm yarn.lock && yarn import && rm -rf package-lock.json"
+  },
+  "author": "Moa Torres",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "jss",
+    "converter"
+  ],
+  "dependencies": {
+    "css": "^3.0.0",
+    "stylis": "^4.0.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.8",
+    "@types/jest": "^26.0.24",
+    "copyfiles": "^2.4.1",
+    "jest": "^27.0.6",
+    "jest-extended": "^0.11.5",
+    "rimraf": "^3.0.2"
+  }
+}
