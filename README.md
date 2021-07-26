@@ -1,4 +1,4 @@
-# CSS to JavaScript Objects
+## CSS to JavaScript-Object
 
 Convert CSS rules to JavaScript style objects
 
@@ -49,13 +49,13 @@ const style = {
 }
 ```
 
-## Options
+#### Options
 
 - `numbers` converts **px** values to numbers
 - `camelCase` converts CSS properties to `camelCased` keys
 - `kebabCase` converts CSS properties to `'kebab-cased'` keys
 
-## Tests
+#### Tests
 
 ```sh
 ------------|---------|----------|---------|---------|-------------------
@@ -67,4 +67,4 @@ All files   |   95.35 |    77.78 |     100 |   97.22 |
 ------------|---------|----------|---------|---------|-------------------
 ```
 
-## 🔖 [License](LICENSE.md)
+#### 🔖 [License](https://github.com/moatorres/cssobject/blob/master/LICENSE.md)
