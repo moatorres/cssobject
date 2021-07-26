@@ -1,8 +1,17 @@
 {
-  "name": "cssobject",
+  "name": "@moatorres/cssobject",
   "version": "1.0.0",
   "decription": "css to javascript-object converter",
   "main": "dist/index.js",
+  "author": "Moa Torres",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/moatorres/cssobject.git"
+  },
   "scripts": {
     "clean": "rm -rf dist",
     "test": "jest",
@@ -10,11 +19,9 @@
     "test:update": "jest --updateSnapshot",
     "test:dev": "jest --watchAll --no-cache -u",
     "build": "yarn clean && babel src -d dist --ignore \"**/*.spec.js\" && copyfiles -u 1 \"src/*.d.ts\" dist",
-    "release": "yarn build && cp README.md package.json dist/ && cd dist && yarn publish --access restricted --non-interactive",
+    "release": "yarn build && cp README.md package.json dist/ && cd dist && yarn publish --access public",
     "fixit": "npm i --package-lock-only && npm audit fix && rm yarn.lock && yarn import && rm -rf package-lock.json"
   },
-  "author": "Moa Torres",
-  "license": "MIT",
   "keywords": [
     "css",
     "jss",
