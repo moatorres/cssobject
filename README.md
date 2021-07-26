@@ -4,6 +4,24 @@ Convert CSS rules to JavaScript style objects
 
 This repo is a fork from the archived [`css-to-object`](https://github.com/jxnblk/css-to-object) with minor updates and improvements.
 
+### Installation
+
+This repo also available as a package and can be installed with NPM and Yarn.
+
+##### NPM
+
+```sh
+npm install @moatorres/cssobject
+```
+
+##### Yarn
+
+```sh
+yarn add @moatorres/cssobject
+```
+
+### Usage
+
 ```js
 import toObj from '@moatorres/cssobject'
 
